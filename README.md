@@ -1,5 +1,5 @@
 # Crypto Price Prediction – DRW Kaggle Challenge
-This project contains my solution to the DRW Crypto Market Prediction Challenge, hosted on Kaggle. The objective is to forecast short-term price movements in crypto asset using high-frequency order book data. The challenge simulates realistic market conditions and requires modeling in a highly noisy, low-signal environment.
+This project contains my solution to the DRW Crypto Market Prediction Challenge, hosted on Kaggle. The objective is to forecast short-term price movements in crypto asset using high-frequency order book data. The challenge simulates realistic market conditions. Crypto prices are incredibly hard to forecast due to high ratiio of noise as stated by DRW. The dataset comtains basic order book details such bid/ask qty/vol along with 780 anonymized(by DRW design) features, which makes feature engineering difficult. Gradient Boosting Machine models are known to deliver good results for time series regression tasks, hence I have experimented primarily with it.
 
 ## Problem Statement
 Predict the next price movement in crypto markets using anonymized, timestamped features derived from Level 2 order book data. The competition evaluates models based on the Pearson correlation coefficient between predicted and actual price movements.
