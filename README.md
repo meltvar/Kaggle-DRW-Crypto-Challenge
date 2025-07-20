@@ -2,12 +2,12 @@
 This project contains my solution to the DRW Crypto Market Prediction Challenge, hosted on Kaggle. The objective is to forecast short-term price movements in crypto asset using high-frequency order book data. The challenge simulates realistic market conditions and requires modeling in a highly noisy, low-signal environment.
 
 ## Problem Statement
-Predict the next price movement in crypto markets (BTC/ETH) using anonymized, timestamped features derived from Level 2 order book data. The competition evaluates models based on the Pearson correlation coefficient between predicted and actual price movements.
+Predict the next price movement in crypto markets using anonymized, timestamped features derived from Level 2 order book data. The competition evaluates models based on the Pearson correlation coefficient between predicted and actual price movements.
 
 ## Approach
 ### Feature Engineering
 - Created lag features (1, 5, 10 ticks) for bid/ask/volume-related variables
-- Computed rolling means and volatility features (5 and 10 tick windows)
+- Computed rolling means, momentum and volatility features (5 and 10 tick windows)
 - Applied StandardScaler to normalize all features (including X1–X780)
 - Filtered engineered features and base features using correlation thresholding
 
